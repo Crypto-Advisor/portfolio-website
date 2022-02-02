@@ -2,7 +2,14 @@ body{
     font-family: 'Encode Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    width: 100%;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 /* Header */
 
@@ -49,11 +56,18 @@ header nav .nav-element{
 main{
     padding-top: 90px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    margin: 0;
 }
 
 /* About Me Section */
 
 .ab-container{
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -61,6 +75,10 @@ main{
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.ab-text h1{
+    margin-bottom: 10px;
 }
 
 .ab-text{
@@ -75,7 +93,7 @@ main{
 /* Projects Section */
 
 .projects-header{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .projects{
@@ -94,21 +112,39 @@ main{
 }
 
 .project-container{
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10%;
     margin: 20px;
 }
 
+.project-container:hover{
+    background-color: #4a5fff;
+    box-shadow: 3px 3px black;
+    color: white;
+}
+
 /* Skills Section */
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .skills{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 250px;
     width: 100%;
 }
 
 .skill-icons{
     font-size: 2em;
+    margin-bottom: 15px;
 }
 
 .skill-icons i{
@@ -121,18 +157,34 @@ main{
 
 /* Contact Section */
 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact{
     display: inline-flex;
     flex-wrap: wrap;
     width: 50%;
     align-items: center;
     justify-content: center;
-    
+    height: 250px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
 }
 
 .contact-option{
-
+    
     margin: 20px;
+}
+
+.contact-option:hover{
+    color: #4a5fff;
 }
 
 .contact-option i{
@@ -142,8 +194,9 @@ main{
 /* Skills + Contact Container */
 
 .skills-contact-container{
+    margin: 60px 0px;
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -154,13 +207,13 @@ main{
 footer{
     background-color: black;
     color: white;
-    width: 100%;
     bottom: 0;
     left: 0;
     padding: 20px;
 }
 
 footer p{
+    margin-bottom: 20px;
 }
 
 footer .nav-element{
