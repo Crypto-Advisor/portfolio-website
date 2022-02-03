@@ -231,3 +231,55 @@ footer .nav-element{
     }
     
 }
+
+@media only screen and (max-width: 1440px){
+
+    /* Header */
+
+    header .logo img{
+        margin-left: 25px;
+        height: auto;
+        width: 30%;
+    }
+
+    header nav .nav-element{
+        font-size: 0.8em;
+        display: inline-flex;
+        margin: 10px;
+    }
+
+    .about-me{
+        flex-wrap: wrap;
+    }
+
+    .ab-text{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .project-container img{
+        max-height: 200px;
+        height: auto;
+        width: 80%;
+    }
+
+    .skill-container{
+        margin-bottom: 40px;
+    }
+
+    .skills{
+        height: auto;
+        width: 80%;
+    }
+
+    .skill-list li{
+        font-size: 1.2em;
+    }
+
+    .contact{
+        width: 80%;
+        height: auto;
+    }
+
+
+}
