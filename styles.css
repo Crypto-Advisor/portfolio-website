@@ -144,7 +144,7 @@ main{
 
 .skill-icons{
     font-size: 2em;
-    margin-bottom: 15px;
+    margin-bottom: 15px;  
 }
 
 .skill-icons i{
@@ -281,5 +281,27 @@ footer .nav-element{
         height: auto;
     }
 
+
+}
+
+/* Dark Mode */
+
+.dark-mode-button{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 6%;
+    font-family: inherit;
+    font-weight: inherit;
+    color: white;
+    background-color: black;
+    font-size: 1.1em;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.dark-mode{
+    
+    background-color: LightGrey;
 
 }
